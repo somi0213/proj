@@ -1,0 +1,29 @@
+h1{
+    font-family: mistral;
+    text-align: "center";
+  
+}
+
+.navbar navbar-light bg-light{
+    margin-left:2000px;
+}
+navbar{
+    background-color:"blue";
+}
+
+.travel_footer{
+    text-align : center;
+    background-color: lightskyblue;
+    height : 70px;
+    
+
+
+}
+.lead{
+    background-color: whitesmoke;
+    height:50px;
+}
+/*img{
+    height : 500px;
+    width: 800px;
+}*/

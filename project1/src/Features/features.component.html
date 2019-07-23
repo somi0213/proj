@@ -1,0 +1,66 @@
+<div class='card'>
+        <div class='card-header'>
+         
+       </div>
+        <div class='card-body'>
+          <div class='row'>
+            <!--<div class='col-md-2'>Search by:</div>
+            <div class='col-md-4'>
+              <input type='text'
+                     [(ngModel)]='listFilter' />
+            </div>-->
+          </div>
+           <!--<div ng-app="myApp" ng-controller="charactersCtrl">
+<input ng-model="searchText" placeholder="enter search term here">
+  <ul>
+    <li ng-repeat="t in characters | filter : searchText">
+      {{ t }}
+    </li>
+  </ul>
+</div>--> 
+          <!--<div class='row'>
+         <div class='col-md-6'>
+              <h5><b>Place Searched: {{listFilter}}</b></h5>
+            </div>
+          </div>-->
+          <div class='table-responsive'>
+            <table class='table'
+                   *ngIf='places && places.length'>
+              <thead>
+                <tr>
+                  
+                    <th>placeImg</th>
+                  <th>placeName</th>
+                  <th>package</th>
+                  <th>Description</th>
+                  <!--<th>rating</th>-->
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor='let pl of place'>
+                  <!--<td>
+                    <img *ngIf='showImage'
+                         [src]='pl.imageUrl'
+                         [title]='pl.placeName'
+                         [style.width.px]='imageWidth'
+                         [style.Height.px]='imageHeight'>
+                  </td>-->
+                   <td><img [src]=" pl.placeImg"
+                     [style.width.px]='200'
+                         [style.Height.px]='200'
+                   ></td>
+                  <td> <a [routerLink]="['/features',pl.placeID]"> {{ pl.placeName }}</a></td>
+                  <td>{{ pl.package | currency }}</td>
+                  <td>{{ pl.Description }}</td>
+
+                  <!--<td *ngFor='let pl of place.rating'>-->
+                    <!--<span class="fa fa-star">rating</span> </td>-->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      
+        </div>
+      
+      </div>
+      <!--<footer class="travel_footer bg-info text-light fixed-last">&copy; by WanderLust 2009</footer>-->
